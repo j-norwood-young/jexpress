@@ -13,6 +13,7 @@ $(function() {
 	});
 
 	$("#models > .test").on("click", function() {
+		$("#models > .result").empty();
 		$.get(url + "api/_models", function(data) {
 			if (data) {
 				data.forEach(function(model) {
